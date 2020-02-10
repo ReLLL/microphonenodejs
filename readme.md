@@ -1,7 +1,11 @@
 # Microphone Recorder NodeJS Addon
 
+(for Windows only)
+
 Written using VC++ and N-API  
 
+Uses ffmpeg.exe internally (embedded in package)
+Partially uses Windows waveIn...() API to get device names
 
 ## EXAMPLE USAGE
 Check example.js to see the usage
@@ -33,21 +37,27 @@ setTimeout(stopfunc, 5000);  // stop recording after 5 seconds
 
 ## Exported functions
 
+```js
 function listRecordingDevices() 
 
 function startRecording(fullPathName, inputDeviceIndex, codec)
 
 function stopRecording()
+```
 
 
 ## BUILD STEPS
 - Install VS 2019  (Express should be fine   https://visualstudio.microsoft.com/vs/express/)
 - install the latest node version   
 - Run the following command to build (in project directory)
+```sh
 npm run build 
+```
 - If it fails, please run the following commands (in project directory)
+```sh
 npm install node-gyp --save-dev
 npm install node-addon-api
+```
 
 
 ### Notes:

@@ -59,7 +59,7 @@ int recordfunc::startRecording(std::string fullPathName, int inputDeviceIndex, i
 
   if (mode == 1) {
 
-    std::string cmdline =  "ffmpeg.exe -f dshow -i audio=\"" +  v[inputDeviceIndex] + "\" -acodec " + codec + " \"" + fullPathName +"\"";
+    std::string cmdline =  "ffmpeg.exe -y -f dshow -i audio=\"" +  v[inputDeviceIndex] + "\" -acodec " + codec + " \"" + fullPathName +"\"";
     printf("[VERBOSE] %s\n", cmdline.c_str());
 
     //wchar_t s[ MAX_PATH ];

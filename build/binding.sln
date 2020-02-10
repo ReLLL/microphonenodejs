@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Administrator)", "..\Users\Administrator", "{E0208ADD-8F54-208D-644C-BBC6B0B1F1E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Users)", "..\Users", "{83FD2216-DE8C-3729-D4EA-3618B14F3F2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(desktop)", "..\Users\Administrator\desktop", "{D3306F87-EF6C-769D-0D01-C68B7A6F9353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(microphone)", "..\Users\Administrator\desktop\projects\microphone", "{D075DA8F-77A8-2E59-7A54-B6E82515D1E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node-addon-api)", "..\Users\Administrator\desktop\projects\microphone\node_modules\node-addon-api", "{631024ED-B1E0-3D37-864E-87856FBBD16E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node_modules)", "..\Users\Administrator\desktop\projects\microphone\node_modules", "{357014B0-8F30-C9D8-D853-FDB693B9B7B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(projects)", "..\Users\Administrator\desktop\projects", "{32335B69-F467-D6E4-8570-2BA54FFC11A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(src)", "..\Users\Administrator\desktop\projects\microphone\node_modules\node-addon-api\src", "{5DCF239B-E896-6801-C757-5482E6A576A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microphone", "microphone.vcxproj", "{1D81018E-8531-38EF-E289-ED10C1D0FA94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB} = {91343D59-D02E-CEF6-EF2C-959DDF29D1CB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nothing", "..\node_modules\node-addon-api\src\nothing.vcxproj", "{91343D59-D02E-CEF6-EF2C-959DDF29D1CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D81018E-8531-38EF-E289-ED10C1D0FA94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D81018E-8531-38EF-E289-ED10C1D0FA94}.Debug|Win32.Build.0 = Debug|Win32
+		{1D81018E-8531-38EF-E289-ED10C1D0FA94}.Release|Win32.ActiveCfg = Release|Win32
+		{1D81018E-8531-38EF-E289-ED10C1D0FA94}.Release|Win32.Build.0 = Release|Win32
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB}.Debug|Win32.Build.0 = Debug|Win32
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB}.Release|Win32.ActiveCfg = Release|Win32
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3306F87-EF6C-769D-0D01-C68B7A6F9353} = {E0208ADD-8F54-208D-644C-BBC6B0B1F1E3}
+		{E0208ADD-8F54-208D-644C-BBC6B0B1F1E3} = {83FD2216-DE8C-3729-D4EA-3618B14F3F2D}
+		{32335B69-F467-D6E4-8570-2BA54FFC11A7} = {D3306F87-EF6C-769D-0D01-C68B7A6F9353}
+		{357014B0-8F30-C9D8-D853-FDB693B9B7B4} = {D075DA8F-77A8-2E59-7A54-B6E82515D1E8}
+		{5DCF239B-E896-6801-C757-5482E6A576A3} = {631024ED-B1E0-3D37-864E-87856FBBD16E}
+		{631024ED-B1E0-3D37-864E-87856FBBD16E} = {357014B0-8F30-C9D8-D853-FDB693B9B7B4}
+		{D075DA8F-77A8-2E59-7A54-B6E82515D1E8} = {32335B69-F467-D6E4-8570-2BA54FFC11A7}
+		{91343D59-D02E-CEF6-EF2C-959DDF29D1CB} = {5DCF239B-E896-6801-C757-5482E6A576A3}
+	EndGlobalSection
+EndGlobal
